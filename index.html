@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a><span>SPMB</span> Admission</a> 
+        <a href="#">|  Home  </a>
+        <a href="#">|  Jalur  </a>
+        <a href="#">|  Jurnal  </a>
+        <a href="#">|  Contact </a>
+        <a href="#">|  Informasi  </a>
+        <form class="search-bar">
+      <input type="text" placeholder="Cari...">
+      <button type="submit">Search</button>
+    </form>
+    </nav>
+
+    <div class="card">
+  <h2>Status Pendaftaran</h2>
+  <p>✔ Dokumen Lengkap</p>
+  <p>⏳ Menunggu Jadwal Ujian</p>
+</div>
+
+<div class="card">
+  <h2>Nilai Ujian dan Prestasi</h2>
+  <p>✔ Dokumen Lengkap</p>
+  <p>⏳ Menunggu Jadwal Ujian</p>
+<p>
+  <a href="https://drive.google.com/file/d/1kxpeCer5yvWvQ6gi0aTgRFiHXuFxZoAV/view?usp=drive_link" target="_blank">
+    <b>Lihat Nilai</b>
+  </a>
+</p>
+</div>
+
+<div class="card">
+  <h2>Pemilihan Sekolah</h2>
+  <p>⇌Sekolah yang dipilih: SMP Negeri 1 Pulu</p>
+  <p>✔ Dokumen Lengkap</p>
+  <p>
+  <a href="https://drive.google.com/file/d/1kxpeCer5yvWvQ6gi0aTgRFiHXuFxZoAV/view?usp=drive_link" target="_blank">
+    <b>Lihat Nilai</b>
+  </a>
+</p>
+</div>
+
+
+
+
+
+  <script src="script.js"></script>
+  
+  
+
+  </body>
+  </html>
+
+    
+<style>
+    section {
+    display: flex;
+    justify-content: center;
+    }
+    button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    }
+</style>
+
+<div class="slider">
+    <div class="slides" id="slides">
+      <div class="container c1"><img src="c:\Users\HP\Downloads\PXL_20260701_085742431.jpg" alt="Foto 1"><div class="caption">Tulisan untuk Foto 1</div></div>
+      <div class="container c2"><img src="c:\Users\HP\Downloads\PXL_20260701_083759975.jpg" alt="Foto 2"><div class="caption">Tulisan untuk Foto 2</div></div>
+      <div class="container c3"><img src="c:\Users\HP\Downloads\PXL_20260701_083800911.jpg" alt="Foto 3"><div class="caption">Tulisan untuk Foto 3</div></div>
+    </div>
+    <div class="navigation">
+      <div class="prev" onclick="moveSlide(-1)">&#10094;</div>
+      <div class="next" onclick="moveSlide(1)">&#10095;</div>
+    </div>
+  </div>
+
+  <script>
+    let index = 0;
+    function moveSlide(step) {
+      const slides = document.getElementById("slides");
+      const total = slides.children.length;
+      index = (index + step + total) % total;
+      slides.style.transform = `translateX(-${index * 600}px)`;
+    }
+  </script>
+</body>
+</html>
+<footer>
+    <center>
+       <p>&copy; 2024 SPMB Admission. All rights reserved.</p>
+        <c href="mailto:spmbadmission@com">spmbadmission@com</c>
+    </center>
+</footer>
